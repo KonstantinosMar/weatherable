@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+## Weatherable
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Weatherable is a React web application that allows users to search for the weather in any location in the world. Users can enter a city or place name in the search bar, and the app will display the current weather conditions in that location. The app also keeps a history of the user's search queries.
 
-## Available Scripts
+### Code Structure
 
-In the project directory, you can run:
+The app is organized into several components, each of which handles a specific aspect of the app's functionality:
 
-### `npm start`
+- **App.js**: the top-level component that contains all other components and renders them to the DOM.
+- **Header.js**: a simple component that displays the Weatherable logo at the top of the page.
+- **Hero.js**: a component that displays a hero image and text, inviting users to search for the weather in any location.
+- **Search.js**: a component that provides the search bar and handles the user's input.
+- **Grid.js**: a component that displays the user's search history and renders the search results.
+- **Item.js**: a component that displays the weather information for a single location.
+- **SearchContext.js**: a context component that provides state and functionality related to the user's search history.
+- **useWeatherFetch.js**: a custom hook that fetches weather data from the OpenWeatherMap API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Limitations
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The app only displays the current weather conditions for a location and does not provide any forecast information.
+- The app uses the OpenWeatherMap API to retrieve weather data, which has usage limits and may not always provide accurate or up-to-date information.
+- The app does not support searching for locations by zip code or other identifiers, only by name.

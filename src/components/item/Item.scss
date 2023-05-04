@@ -1,0 +1,49 @@
+.city-item {
+  padding: 0 40px;
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  min-height: 240px;
+
+  &.message {
+    justify-content: center;
+  }
+
+
+
+  &:hover {
+    background-color: white;
+    box-shadow: 0 20px 40px 0 #00000026;
+  }
+
+  .info {
+    .temp {
+      font-size: 30px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+
+    .weather {
+      text-transform: capitalize;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .city {
+      font-size: 20px;
+      font-weight: 300;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    .coords {
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+  }
+
+}

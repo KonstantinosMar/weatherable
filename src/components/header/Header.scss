@@ -1,0 +1,21 @@
+header {
+  position: relative;
+  z-index: 100;
+  height: 98px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 29px 0 #0000001A;
+  @media (max-width: 650px) {
+    height: 60px;
+  }
+  img {
+    height: 80px;
+    width: 240px;
+    @media (max-width: 650px) {
+      width: 58px;
+      height: 47px;
+    }
+  }
+}

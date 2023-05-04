@@ -1,0 +1,10 @@
+.loading {
+  filter: blur(4px);
+  pointer-events: none;
+
+  .info {
+    p {
+      opacity: 0.5;
+    }
+  }
+}
